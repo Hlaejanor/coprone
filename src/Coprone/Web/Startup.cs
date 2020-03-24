@@ -34,6 +34,8 @@ namespace Web
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
             services.AddRazorPages();
+  
+         
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
