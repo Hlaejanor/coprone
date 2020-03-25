@@ -1,27 +1,29 @@
 ﻿@page
 @model TheScienceModel
 @{
-    ViewData["Title"] = "The Science";
+    ViewData["Title"] = "The Science behind";
 }
 
 
 <h1>@ViewData["Title"]</h1>
 
-<p><ul>
-       <li>
-           About 5% of Covid-19 patients need hospital help. When the pandemic peaks, this can overwhelm the hospitals.
+<p>
 
-       </li>
-       <li> Shortage of beds <strong>and</strong> </li>
-    <li>Shortage of skilled staff is the result. </li>
-</ul> 
-    CoProne Turning bed aims to help solve this by adressing three problems simultaneously:
+
+    About 5% of Covid-19 patients need hospital help. When the pandemic peaks, this will overwhelm our hospitals in many places.
+    The resut is a critical shortage of<strong> intensive care beds </strong>
+                                       <strong>
+                                           trained intensive care staff</strong> is the result.
+    </p>
+<p>
+    CoProne Turning bed aims to help solve this by adressing <strong>three problems </strong>simultaneously:
     <ul>
         <li>Getting beds produced quickly,  globally</li>
         <li>Improve treatment for Covid-19</li>
         <li>Reduce staff workload</li>
+    </ul>
 
-    </p>
+</p>
 <section>
     <div class="container">
         <div class="row justify-content-center">
@@ -37,8 +39,9 @@
                             <div>
                                 <h3>How to treat Covid-19</h3>
                                 <p class="lead">
-                                    Covid-19 leads to ARDS, which require ventilator support. 
+                                    Covid-19 leads to ARDS, which require ventilator support.
                                 </p>
+                                <a href="#ARDSandCorona" class="lead hover-arrow">Learn more</a>
                             </div>
                         </div>
                     </div>
@@ -51,8 +54,9 @@
                             <div>
                                 <h3>Prone position helps a lot</h3>
                                 <p class="lead">
-                                    Prone position (face down) reduces mortality rates by 50% 
+                                    Prone position (face down) reduces mortality rates by 50%
                                 </p>
+                                <a href="#PronePositioning" class="lead hover-arrow">Learn more</a>
                             </div>
                         </div>
                     </div>
@@ -67,6 +71,7 @@
                                 <p class="lead">
                                     Distribute pressure evenly, less risk of complications, use prone position more aggressibely and realize lower mortality rates.
                                 </p>
+                                <a href="#ErgoSeatCushion" class="lead hover-arrow">Learn more</a>
                             </div>
                         </div>
                     </div>
@@ -75,6 +80,67 @@
                 </div>
             </div>
         </div>
+        <hr />
+        <div class="row justify-content-center">
+            <div class="col">
+                <h2>Need more beds</h2>
+                <div class="row">
+
+                    <div class="col-md-6 col-lg-4 d-flex">
+                        <div class="card card-icon-3 card-body justify-content-between">
+                            <div class="icon-round mb-3 mb-md-4 bg-primary">
+                                <img class="icon bg-primary" src="assets/img/icons/theme/devices/airpods.svg" alt="icon" data-inject-svg />
+                            </div>
+                            <span class="badge badge-danger">Problem</span>
+                            <div>
+                                <h3>We need more beds</h3>
+                                <p class="lead">
+                                    The surge in Covid-19 patients requires expansion of Intensive Care. This means more ventilators, more staff and <strong>more beds</strong>.But how can we build beds fast
+                                    enough, globally?
+                                </p>
+                                <a href="#NeedMoreBeds" class="lead hover-arrow">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 d-flex">
+                        <div class="card card-icon-3 card-body justify-content-between">
+                            <div class="icon-round mb-3 mb-md-4 bg-primary">
+                                <img class="icon bg-primary" src="assets/img/icons/theme/devices/airpods.svg" alt="icon" data-inject-svg />
+                            </div>
+                            <span class="badge badge-warning">Insight</span>
+                            <div>
+                                <h3>This is a time of crisis</h3>
+                                <p class="lead">
+                                    In this special time of crisis, hospitals might take new equipment in use without the normal amount of testing.
+                                </p>
+                                <a href="#FastForward" class="lead hover-arrow">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6 col-lg-4 d-flex">
+                        <div class="card card-icon-3 card-body justify-content-between">
+                            <div class="icon-round mb-3 mb-md-4 bg-primary">
+                                <img class="icon bg-primary" src="assets/img/icons/theme/devices/airpods.svg" alt="icon" data-inject-svg />
+                            </div>
+                            <span class="badge badge-primary">Solution</span>
+                            <div>
+                                <h3>Decentralized, crowd-sourced production</h3>
+                                <p class="lead">
+                                    Let us collaborate like the software industry, utilise available makerspaces, carpenters and machining to build and test new beds, globally, at scale.
+                                </p>
+                                <a href="#MakerSpaces" class="lead hover-arrow">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
         <div class="row justify-content-center">
             <div class="col">
                 <h2>Staff capacity</h2>
@@ -91,37 +157,7 @@
                                 <p class="lead">
                                     We are running out of intensive care nurses
                                 </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4 d-flex">
-                        <div class="card card-icon-3 card-body justify-content-between">
-                            <div class="icon-round mb-3 mb-md-4 bg-primary">
-                                <img class="icon bg-primary" src="assets/img/icons/theme/devices/airpods.svg" alt="icon" data-inject-svg />
-                            </div>
-                            <span class="badge badge-warning">Insight</span>
-                            <div>
-                                <h3>Turning patients is staff intensive </h3>
-                                <p class="lead">
-                                  Turning patients requires up to (3-5), and takes up to 30 minutes of preparation and execution. 
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-md-6 col-lg-4 d-flex">
-                        <div class="card card-icon-3 card-body justify-content-between">
-                            <div class="icon-round mb-3 mb-md-4 bg-primary">
-                                <img class="icon bg-primary" src="assets/img/icons/theme/devices/airpods.svg" alt="icon" data-inject-svg />
-                            </div>
-                            <span class="badge badge-primary">Solution</span>
-                            <div>
-                                <h3>Bed with semi-automatic turning</h3>
-                                <p class="lead">
-                                    A bed that supports turning patients, will reduce staff needed from 5 to 2, and  
-                                </p>
+                                <a href="#StaffShortage" class="lead hover-arrow">Learn more</a>
                             </div>
                         </div>
                     </div>
@@ -137,6 +173,7 @@
                                 <p class="lead">
                                     Simplify the turning procedure for proned patients
                                 </p>
+                                <a href="#TimeStudies" class="lead hover-arrow">Learn more</a>
                             </div>
                         </div>
                     </div>
@@ -151,14 +188,277 @@
                                 <p class="lead">
                                     Build beds globally, quickly and with high quality
                                 </p>
+                                <a href="#DistributedMachining" class="lead hover-arrow">Learn more</a>
                             </div>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<!--- The ARDS AND PRONE -->
+<section id="ARDSandCorona" class="pb-0 pb-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-xl-8">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+
+
+                </div>
+                <h1>Treating ARDS and Covid-19</h1>
+                <div class="d-flex align-items-center">
+                    <a href="#">
+                        <img src="assets/img/avatars/male-1.jpg" alt="Avatar" class="avatar mr-2">
+                    </a>
+                    <div>
+                        <div>
+                            by <a href="#">Jens Tandstad</a>
+                        </div>
+                        <div class="text-small text-muted">25th March</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="p-0" data-reading-position>
+    <div class="container">
+        <div class="row justify-content-center position-relative">
+            <div class="col-lg-10 col-xl-8">
+                <div class="rounded o-hidden">
+                    <div class="plyr" data-plyr-provider="youtube" data-plyr-embed-id="Jw_gUUKg-0k"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-xl-7 col-lg-8 col-md-10">
+                <article class="article">
+                    <p class="lead">
+                        Treating ARDS is difficult, but in 2018 putting people in prone position (face down) was added as a strong recommendation, following a study showing up to 50% lower mortality.
+                    </p>
+                    <p>
+                        I am not a health professional, so this is based on research online. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+                        sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                    </p>
+                    <p>
+                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem
+                        ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                    </p>
+                    <h4>A heading to shift focus</h4>
+                    <p>
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia
+                        animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas
+                        assumenda est, omnis dolor repellendus.
+                    </p>
+                    <figure>
+                        <img src="assets/img/article-9.jpg" alt="Image" class="rounded">
+                        <figcaption>A caption to describe the image</figcaption>
+                    </figure>
+                    <p>
+                        Aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                    </p>
+                    <blockquote class="bg-primary-alt">
+                        <div class="h3 mb-2">“We couldn’t have done it without the hard-working team from Leap.”</div>
+                        <span class="text-small text-muted">– Harvey Dent (via Tareq I.)</span>
+                        <a href="#" class="btn btn-primary btn-sm">
+                            <img class="icon" src="assets/img/icons/social/twitter.svg" alt="twitter social icon" data-inject-svg />
+                            <span>Tweet</span>
+                        </a>
+                    </blockquote>
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+                        sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                    </p>
+                    <h5>A minor heading to summarise</h5>
+                    <p>Sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
+                    <ul>
+                        <li>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam</li>
+                        <li>Corporis suscipit laboriosam</li>
+                        <li>Aspernatur aut odit aut fugit eos qui ratione</li>
+                        <li>Et quasi</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--- Staff shortages --->
+
+<section id="NeedMoreBeds" class="pb-0 pb-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-xl-8">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+
+
+                </div>
+                <h1>Staff shortages</h1>
+                <div class="d-flex align-items-center">
+                    <a href="#">
+                        <img src="assets/img/avatars/male-1.jpg" alt="Avatar" class="avatar mr-2">
+                    </a>
+                    <div>
+                        <div>
+                            by <a href="#">Jens Tandstad</a>
+                        </div>
+                        <div class="text-small text-muted">25th March</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="p-0" data-reading-position>
+    <div class="container">
+        <div class="row justify-content-center position-relative">
+            <div class="col-lg-10 col-xl-8">
+                <div class="rounded o-hidden">
+                    <div class="plyr" data-plyr-provider="youtube" data-plyr-embed-id="Jw_gUUKg-0k"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-xl-7 col-lg-8 col-md-10">
+                <article class="article">
+                    <p class="lead">
+                        Staff shortage is imminent, particularly trained intensive care nurses. The expansion of intensive care happens at the same time as staff are sent into quarantine. Training new staff is one important solution, but reducing time needed for common tasks is another.
+                    </p>
+                    <p>
+                        I am not a health professional, so this is based on research online. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+                        sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                    </p>
+                    <p>
+                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem
+                        ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                    </p>
+                    <h4>A heading to shift focus</h4>
+                    <p>
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia
+                        animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas
+                        assumenda est, omnis dolor repellendus.
+                    </p>
+                    <figure>
+                        <img src="assets/img/article-9.jpg" alt="Image" class="rounded">
+                        <figcaption>A caption to describe the image</figcaption>
+                    </figure>
+                    <p>
+                        Aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                    </p>
+                    <blockquote class="bg-primary-alt">
+                        <div class="h3 mb-2">“We couldn’t have done it without the hard-working team from Leap.”</div>
+                        <span class="text-small text-muted">– Harvey Dent (via Tareq I.)</span>
+                        <a href="#" class="btn btn-primary btn-sm">
+                            <img class="icon" src="assets/img/icons/social/twitter.svg" alt="twitter social icon" data-inject-svg />
+                            <span>Tweet</span>
+                        </a>
+                    </blockquote>
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+                        sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                    </p>
+                    <h5>A minor heading to summarise</h5>
+                    <p>Sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
+                    <ul>
+                        <li>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam</li>
+                        <li>Corporis suscipit laboriosam</li>
+                        <li>Aspernatur aut odit aut fugit eos qui ratione</li>
+                        <li>Et quasi</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--- Need more beds-->
+
+<section id="NeedMoreBeds" class="pb-0 pb-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-xl-8">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+
+
+                </div>
+                <h1>Need more beds</h1>
+                <div class="d-flex align-items-center">
+                    <a href="#">
+                        <img src="assets/img/avatars/male-1.jpg" alt="Avatar" class="avatar mr-2">
+                    </a>
+                    <div>
+                        <div>
+                            by <a href="#">Jens Tandstad</a>
+                        </div>
+                        <div class="text-small text-muted">25th March</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="p-0" data-reading-position>
+    <div class="container">
+        <div class="row justify-content-center position-relative">
+            <div class="col-lg-10 col-xl-8">
+                <div class="rounded o-hidden">
+                    <div class="plyr" data-plyr-provider="youtube" data-plyr-embed-id="Jw_gUUKg-0k"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-xl-7 col-lg-8 col-md-10">
+                <article class="article">
+                    <p class="lead">
+                      In many countries, Intensive care is expanded to use hotels, sports arenas and even parking lots. Beds re needed.
+                    </p>
+                    <p>
+                        I am not a health professional, so this is based on research online. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+                        sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                    </p>
+                    <p>
+                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem
+                        ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                    </p>
+                    <h4>A heading to shift focus</h4>
+                    <p>
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia
+                        animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas
+                        assumenda est, omnis dolor repellendus.
+                    </p>
+                    <figure>
+                        <img src="assets/img/article-9.jpg" alt="Image" class="rounded">
+                        <figcaption>A caption to describe the image</figcaption>
+                    </figure>
+                    <p>
+                        Aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                    </p>
+                    <blockquote class="bg-primary-alt">
+                        <div class="h3 mb-2">“We couldn’t have done it without the hard-working team from Leap.”</div>
+                        <span class="text-small text-muted">– Harvey Dent (via Tareq I.)</span>
+                        <a href="#" class="btn btn-primary btn-sm">
+                            <img class="icon" src="assets/img/icons/social/twitter.svg" alt="twitter social icon" data-inject-svg />
+                            <span>Tweet</span>
+                        </a>
+                    </blockquote>
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+                        sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                    </p>
+                    <h5>A minor heading to summarise</h5>
+                    <p>Sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
+                    <ul>
+                        <li>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam</li>
+                        <li>Corporis suscipit laboriosam</li>
+                        <li>Aspernatur aut odit aut fugit eos qui ratione</li>
+                        <li>Et quasi</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
 <p></p>
