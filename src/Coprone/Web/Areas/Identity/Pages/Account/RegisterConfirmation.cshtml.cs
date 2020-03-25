@@ -52,7 +52,7 @@ namespace Web.Areas.Identity.Pages.Account
                 values: new { area = "Identity", userId = userId, code = code },
                 protocol: Request.Scheme);
 
-            await EmailService.SendEmailAsync(email, "Confirm email address", $"Click the link below to confirm your email address: <a href='{EmailConfirmationUrl}'>The link below</a>");
+            await _sender.SendEmailAsync(email, "Confirm email address", $"Click the link below to confirm your email address: <a href='{EmailConfirmationUrl}'>The link below</a>");
 
             return Page();
         }
