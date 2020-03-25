@@ -17,7 +17,7 @@
         <div class="navbar-container bg-primary-3">
             <nav class="navbar navbar-expand-lg navbar-dark bg-primary-3" data-sticky="top">
                 <div class="container">
-                    <a style="width:140px"  class="navbar-brand fade-page" href="/">
+                    <a style="width:140px" class="navbar-brand fade-page" href="/">
                         <img src="~/img/Coprone-logo.svg" alt="Coprone">
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -196,6 +196,8 @@
         <img class="icon" src="~/img/icons/theme/navigation/arrow-up.svg" alt="arrow-up icon" data-inject-svg />
     </a>
 
+    <script type="text/javascript" src="~/lib/Moment/moment.js"></script>
+
     <script type="text/javascript" src="~/js/jquery.min.js"></script>
     <script type="text/javascript" src="~/js/popper.min.js"></script>
     <script type="text/javascript" src="~/js/bootstrap.js"></script>
@@ -241,6 +243,19 @@
     <!-- Removes page load animation when window is finished loading -->
     <script type="text/javascript">
         window.addEventListener("load", function () { document.querySelector('body').classList.add('loaded'); });
+    </script>
+
+    <!-- Helper function to convert utc timestamps to local time client side. Use html.LocalDate method. -->
+    <script>
+        $(function () {
+            var key = $(".mytime").each(function (i, obj) {
+                var element = $(this);
+                var utc = element.attr("utc") + 'Z';
+                var d = new Date(utc);
+                var l = d.toLocaleString(); // Runs client side, so will be client's local time!
+                element.text(l);
+            });
+        });
     </script>
 
     @RenderSection("Scripts", required: false)
