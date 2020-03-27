@@ -1,164 +1,157 @@
 ﻿@page
 @model TheBedModel
 @{
-    ViewData["Title"] = "The Science";
+    ViewData["Title"] = "The Bed";
 }
-
 
 <h1>@ViewData["Title"]</h1>
 
-<p><ul>
-       <li>
-           About 5% of Covid-19 patients need hospital help. When the pandemic peaks, this can overwhelm the hospitals.
-
-       </li>
-       <li> Shortage of beds <strong>and</strong> </li>
-    <li>Shortage of skilled staff is the result. </li>
-</ul> 
-    CoProne Turning bed aims to help solve this by adressing three problems simultaneously:
+<p>
     <ul>
-        <li>Getting beds produced quickly,  globally</li>
-        <li>Improve treatment for Covid-19</li>
-        <li>Reduce staff workload</li>
+        <li>We are developing a turning bed   </li>
+        <li> Designed for distributed production, worldwide </li>
+        <li> Reducing nurse hours from 1.5h to approx 45 min per turning </li>
+        <li> Realizing nurse time savings of up to 2 hours a day </li>
+        <li> Probably improved effect from prone position due to improved breathing(trials nescessary to know)</li>
+    </ul>
+</p>
+<h2>Key features</h2>
+<div class="row justify-content-center">
+    <div class="col">
+        <div class="row">
+            <div class="col-md-6 col-lg-4 d-flex">
+                <div class="card card-icon-3 card-body justify-content-between">
+                    <div class="icon-round mb-3 mb-md-4 bg-primary">
+                        <img class="icon bg-primary" src="assets/img/icons/theme/devices/airpods.svg" alt="icon" data-inject-svg />
+                    </div>
+                    <span class="badge badge-primary">Feature</span>
+                    <div>
+                        <h3>Rapid, distributed production</h3>
+                        <p class="lead">
+                            CoProne bed can be built from standard parts and CNC machined plywood anywhere in the world, in time for expanding IC wards and the pandemic peak.
+                        </p>
+                        <a href="#DistributedProduction" class="lead hover-arrow">Learn more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 d-flex">
+                <div class="card card-icon-3 card-body justify-content-between">
+                    <div class="icon-round mb-3 mb-md-4 bg-primary">
+                        <img class="icon bg-primary" src="assets/img/icons/theme/devices/airpods.svg" alt="icon" data-inject-svg />
+                    </div>
+                    <span class="badge badge-primary">Feature</span>
+                    <div>
+                        <h3>Save time on turning maneuver</h3>
+                        <p class="lead">
+                           Cut intensive care nurse hours needed for turning maneuver by 3 hours per patient per day.
+                        </p>
+                        <a href="#PronePositioning" class="lead hover-arrow">Learn more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 d-flex">
+                <div class="card card-icon-3 card-body justify-content-between">
+                    <div class="icon-round mb-3 mb-md-4 bg-primary">
+                        <img class="icon bg-primary" src="assets/img/icons/theme/devices/airpods.svg" alt="icon" data-inject-svg />
+                    </div>
+                    <span class="badge badge-primary">Feature</span>
+                    <div>
+                        <h3>Improve prone position by special cushions</h3>
+                        <p class="lead">
+                            With the ErgoSeat Prone cushions, realize better positiong faster. This reduces complications, reduces pressure ulcers, improves breathing and probably increases survival rates.
+                        </p>
+                        <a href="#ErgoSeatCushion" class="lead hover-arrow">Learn more</a>
+                    </div>
+                </div>
+            </div>
 
-    </p>
-<section>
+
+        </div>
+    </div>
+</div>
+<!--- The Coprone Turning Bed -->
+<section id="CoproneTurningBed" class="pb-0 pb-5">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col">
-                <h2>Treating Covid-19</h2>
-                <div class="row">
-                    <div class="col-md-6 col-lg-4 d-flex">
-                        <div class="card card-icon-3 card-body justify-content-between">
-                            <div class="icon-round mb-3 mb-md-4 bg-primary">
-                                <img class="icon bg-primary" src="assets/img/icons/theme/devices/airpods.svg" alt="icon" data-inject-svg />
-                            </div>
-                            <span class="badge badge-danger">Problem</span>
-                            <div>
-                                <h3>How to treat Covid-19</h3>
-                                <p class="lead">
-                                    Covid-19 leads to ARDS, which require ventilator support. 
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 d-flex">
-                        <div class="card card-icon-3 card-body justify-content-between">
-                            <div class="icon-round mb-3 mb-md-4 bg-primary">
-                                <img class="icon bg-primary" src="assets/img/icons/theme/devices/airpods.svg" alt="icon" data-inject-svg />
-                            </div>
-                            <span class="badge badge-warning">Insight</span>
-                            <div>
-                                <h3>Prone position helps a lot</h3>
-                                <p class="lead">
-                                    Prone position (face down) reduces mortality rates by 50% 
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 d-flex">
-                        <div class="card card-icon-3 card-body justify-content-between">
-                            <div class="icon-round mb-3 mb-md-4 bg-primary">
-                                <img class="icon bg-primary" src="assets/img/icons/theme/devices/airpods.svg" alt="icon" data-inject-svg />
-                            </div>
-                            <span class="badge badge-primary">Solution</span>
-                            <div>
-                                <h3>Improve prone position by special cushions</h3>
-                                <p class="lead">
-                                    Distribute pressure evenly, less risk of complications, use prone position more aggressibely and realize lower mortality rates.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="col-lg-10 col-xl-8">
+                <div class="d-flex justify-content-between align-items-center mb-3">
 
 
                 </div>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col">
-                <h2>Staff capacity</h2>
-                <div class="row">
-
-                    <div class="col-md-6 col-lg-4 d-flex">
-                        <div class="card card-icon-3 card-body justify-content-between">
-                            <div class="icon-round mb-3 mb-md-4 bg-primary">
-                                <img class="icon bg-primary" src="assets/img/icons/theme/devices/airpods.svg" alt="icon" data-inject-svg />
-                            </div>
-                            <span class="badge badge-danger">Problem</span>
-                            <div>
-                                <h3>Intensive care nurses are overworked</h3>
-                                <p class="lead">
-                                    We are running out of intensive care nurses
-                                </p>
-                            </div>
+                <h1>CoProne turning bed</h1>
+                <div class="d-flex align-items-center">
+                    <a href="#">
+                        <img src="assets/img/avatars/male-1.jpg" alt="Avatar" class="avatar mr-2">
+                    </a>
+                    <div>
+                        <div>
+                            by <a href="#">Jens Tandstad</a>
                         </div>
+                        <div class="text-small text-muted">25th March</div>
                     </div>
-
-                    <div class="col-md-6 col-lg-4 d-flex">
-                        <div class="card card-icon-3 card-body justify-content-between">
-                            <div class="icon-round mb-3 mb-md-4 bg-primary">
-                                <img class="icon bg-primary" src="assets/img/icons/theme/devices/airpods.svg" alt="icon" data-inject-svg />
-                            </div>
-                            <span class="badge badge-warning">Insight</span>
-                            <div>
-                                <h3>Turning patients is staff intensive </h3>
-                                <p class="lead">
-                                  Turning patients requires up to (3-5), and takes up to 30 minutes of preparation and execution. 
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-md-6 col-lg-4 d-flex">
-                        <div class="card card-icon-3 card-body justify-content-between">
-                            <div class="icon-round mb-3 mb-md-4 bg-primary">
-                                <img class="icon bg-primary" src="assets/img/icons/theme/devices/airpods.svg" alt="icon" data-inject-svg />
-                            </div>
-                            <span class="badge badge-primary">Solution</span>
-                            <div>
-                                <h3>Bed with semi-automatic turning</h3>
-                                <p class="lead">
-                                    A bed that supports turning patients, will reduce staff needed from 5 to 2, and  
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4 d-flex">
-                        <div class="card card-icon-3 card-body justify-content-between">
-                            <div class="icon-round mb-3 mb-md-4 bg-primary">
-                                <img class="icon bg-primary" src="assets/img/icons/theme/devices/airpods.svg" alt="icon" data-inject-svg />
-                            </div>
-                            <span class="badge badge-primary">Solution</span>
-                            <div>
-                                <h3>Reduce time needed to turn patients</h3>
-                                <p class="lead">
-                                    Simplify the turning procedure for proned patients
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 d-flex">
-                        <div class="card card-icon-3 card-body justify-content-between">
-                            <div class="icon-round mb-3 mb-md-4 bg-primary">
-                                <img class="icon bg-primary" src="assets/img/icons/theme/devices/airpods.svg" alt="icon" data-inject-svg />
-                            </div>
-                            <span class="badge badge-primary">Solution</span>
-                            <div>
-                                <h3>Distributed production using CNC</h3>
-                                <p class="lead">
-                                    Build beds globally, quickly and with high quality
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-
                 </div>
             </div>
         </div>
     </div>
 </section>
-<p></p>
+<section class="p-0" data-reading-position>
+    <div class="container">
+        <div class="row justify-content-center position-relative">
+            <div class="col-lg-10 col-xl-8">
+                <div class="rounded o-hidden">
+                    <div class="plyr" data-plyr-provider="youtube" data-plyr-embed-id="XUDSFy1horI"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-xl-7 col-lg-8 col-md-10">
+                <article class="article">
+                    <p class="lead">
+                        CoProne Turning bed is designed to solve three challenges: Reduce intensive care staff workload, improve treatment of ARDS and get enough beds made fast enough. This is how we achieve each of those things.
+                    </p>
+
+                    <p>
+                        In the current Corona Virus pandemic, many countries, perhaps even all, need to scale their Intensive Care units to cope with the influx of new patients. The Corona Pandemic comes on top of the normal need for Emergency Care, and most hospitals have been operating at close to 100% even before the virus came along and changed everything.
+
+                    </p>
+                    <h4>Prone position</h4>
+                    <p>
+                        The current mandated treatment for ARDS includes use of prone position. The way to obtain that in a normal hospital bed, is by using the so called "Swimmers Position".
+                        The patient is placed head down, and hands above head. Done right, this basically reduces mortality by 50%. For more information, see <a href="/TheScience">the science</a>.
+                        However, use of the Swimmers Position is not ideal, particularly for obese and heavy patients, because their weight makes their lungs squashed. This is true both when they are on their backs, and when they are face down (in prone position).
+
+                    </p>
+
+                    <figure>
+                        <img src="assets/img/article-9.jpg" alt="Image" class="rounded">
+                        <figcaption>CoProne Cushions</figcaption>
+                    </figure>
+                    <p>
+                        The CoProne cushions have been developed by Ergoseat AS, which has 15 years of experience creating sitting support system for multi-handicapped people. These Cushions can be used in a normal hospital bed,
+                    </p>
+                    <blockquote class="bg-primary-alt">
+                        <div class="h3 mb-2">“We couldn’t have done it without the hard-working team from Leap.”</div>
+                        <span class="text-small text-muted">– Harvey Dent (via Tareq I.)</span>
+                        <a href="#" class="btn btn-primary btn-sm">
+                            <img class="icon" src="assets/img/icons/social/twitter.svg" alt="twitter social icon" data-inject-svg />
+                            <span>Tweet</span>
+                        </a>
+                    </blockquote>
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+                        sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                    </p>
+                    <h5>A minor heading to summarise</h5>
+                    <p>Sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
+                    <ul>
+                        <li>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam</li>
+                        <li>Corporis suscipit laboriosam</li>
+                        <li>Aspernatur aut odit aut fugit eos qui ratione</li>
+                        <li>Et quasi</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
