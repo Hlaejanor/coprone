@@ -250,7 +250,7 @@
                 var element = $(this);
                 var utc = element.attr("utc") + 'Z';
                 var d = new Date(utc);
-                var l = d.toLocaleString(); // Runs client side, so will be client's local time!
+                var l = d.toLocaleDateString(); // Runs client side, so will be client's local time!
                 element.text(l);
             });
         });
