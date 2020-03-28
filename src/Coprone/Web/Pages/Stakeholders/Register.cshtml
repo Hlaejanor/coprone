@@ -1,0 +1,115 @@
+﻿@page
+@model Web.Pages.Stakeholders.CreateModel
+@using Data.Entities.StackeholderEntities;
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+
+    var stakeholderTypes = Html.GetEnumSelectList<StakeholderTypeEnum>();
+    var producerTypes = Html.GetEnumSelectList<ProducerTypeEnum>();
+    var buyerTypes = Html.GetEnumSelectList<BuyerTypeEnum>();
+}
+
+<h1>Register</h1>
+
+<h4>As a maker, or as a taker</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Stakeholder.Type" class="control-label"></label>
+                <select id="stakeholder-type" asp-for="Stakeholder.Type" asp-items="stakeholderTypes" class="form-control"></select>
+                <span asp-validation-for="Stakeholder.Type" class="text-danger"></span>
+            </div>
+            <div id="producer-form-group" class="form-group">
+                <label asp-for="Stakeholder.ProducerType" class="control-label"></label>
+                <select asp-for="Stakeholder.ProducerType" class="form-control" asp-items="producerTypes"></select>
+                <span asp-validation-for="Stakeholder.ProducerType" class="text-danger"></span>
+            </div>
+            <div id="buyer-form-group" class="form-group">
+                <label asp-for="Stakeholder.BuyerType" class="control-label"></label>
+                <select asp-for="Stakeholder.BuyerType" class="form-control" asp-items="buyerTypes"></select>
+                <span asp-validation-for="Stakeholder.BuyerType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Stakeholder.Organization" class="control-label"></label>
+                <input asp-for="Stakeholder.Organization" class="form-control" />
+                <span asp-validation-for="Stakeholder.Organization" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Stakeholder.State" class="control-label"></label>
+                <input asp-for="Stakeholder.State" class="form-control" />
+                <span asp-validation-for="Stakeholder.State" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Stakeholder.Country" class="control-label"></label>
+                <input asp-for="Stakeholder.Country" class="form-control" />
+                <span asp-validation-for="Stakeholder.Country" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Stakeholder.NumberOfEmployees" class="control-label"></label>
+                <input asp-for="Stakeholder.NumberOfEmployees" class="form-control" />
+                <span asp-validation-for="Stakeholder.NumberOfEmployees" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Stakeholder.ContactPerson" class="control-label"></label>
+                <input asp-for="Stakeholder.ContactPerson" class="form-control" />
+                <span asp-validation-for="Stakeholder.ContactPerson" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Stakeholder.PhoneNumber" class="control-label"></label>
+                <input asp-for="Stakeholder.PhoneNumber" class="form-control" />
+                <span asp-validation-for="Stakeholder.PhoneNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Stakeholder.Email" class="control-label"></label>
+                <input asp-for="Stakeholder.Email" class="form-control" />
+                <span asp-validation-for="Stakeholder.Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Stakeholder.Equipment" class="control-label"></label>
+                @Html.TextAreaFor(x => x.Stakeholder.Equipment, new { @class = "form-control", @rows = 10 })
+                <span asp-validation-for="Stakeholder.Equipment" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Stakeholder.HowCanYouHelp" class="control-label"></label>
+                @Html.TextAreaFor(x => x.Stakeholder.HowCanYouHelp, new { @class = "form-control", @rows = 10 })
+                <span asp-validation-for="Stakeholder.HowCanYouHelp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+
+<script type="text/javascript" src="~/js/jquery.min.js"></script>
+
+<script>
+    updateDynamicFields();
+
+    $("#stakeholder-type").change(function () {
+        updateDynamicFields();
+    });
+
+    function updateDynamicFields() {
+        const value = document.getElementById("stakeholder-type").value;
+
+        if (value == 0) {
+            $("#producer-form-group").show();
+            $("#buyer-form-group").hide();
+        }
+        if (value == 1) {
+            $("#producer-form-group").hide();
+            $("#buyer-form-group").show();
+        }
+    }
+</script>

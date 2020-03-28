@@ -1,0 +1,97 @@
+﻿@page
+@model Web.Pages.Stakeholders.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Your details are submitted</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Stakeholder.Type)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Stakeholder.Type)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Stakeholder.ProducerType)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Stakeholder.ProducerType)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Stakeholder.BuyerType)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Stakeholder.BuyerType)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Stakeholder.Organization)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Stakeholder.Organization)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Stakeholder.State)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Stakeholder.State)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Stakeholder.Country)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Stakeholder.Country)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Stakeholder.NumberOfEmployees)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Stakeholder.NumberOfEmployees)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Stakeholder.ContactPerson)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Stakeholder.ContactPerson)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Stakeholder.PhoneNumber)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Stakeholder.PhoneNumber)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Stakeholder.Email)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Stakeholder.Email)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Stakeholder.Equipment)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Stakeholder.Equipment)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Stakeholder.HowCanYouHelp)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Stakeholder.HowCanYouHelp)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Stakeholder.CreatedUtc)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Stakeholder.CreatedUtc)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Register" asp-route-id="@Model.Stakeholder.Id">Edit</a>
+</div>
