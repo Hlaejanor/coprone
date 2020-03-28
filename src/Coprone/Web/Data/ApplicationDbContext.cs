@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Web.Data.Entities.StackeholderEntities;
 
 namespace Web.Data
 {
@@ -15,5 +16,6 @@ namespace Web.Data
         }
 
         public DbSet<Release> Release { get; set; }
+        public DbSet<Stakeholder> Stakeholder { get; set; }
     }
 }

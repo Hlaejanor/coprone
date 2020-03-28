@@ -37,7 +37,7 @@
                                     <a class="nav-link" asp-page="/TheBed">The bed</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" asp-page="/ReleaseManagement">Download</a>
+                                    <a class="nav-link" asp-page="/ReleaseManagement/Index">Download</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" asp-page="/Privacy">Privacy</a>
@@ -247,7 +247,7 @@
                 var element = $(this);
                 var utc = element.attr("utc") + 'Z';
                 var d = new Date(utc);
-                var l = d.toLocaleString(); // Runs client side, so will be client's local time!
+                var l = d.toLocaleDateString(); // Runs client side, so will be client's local time!
                 element.text(l);
             });
         });

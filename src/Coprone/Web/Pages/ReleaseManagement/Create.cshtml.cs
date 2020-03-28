@@ -37,10 +37,7 @@ namespace Web.Pages.ReleaseManagement
 
             var newRelease = new Release();
 
-            if (await TryUpdateModelAsync<Release>(
-               newRelease,
-               "release",   // Prefix for form value.
-               s => s.Name, s => s.Version, s => s.Contributors, s => s.Licence))
+            if (await MapInput(newRelease))
             {
 
                 newRelease.CreatedUtc = DateTime.UtcNow;
@@ -53,9 +50,12 @@ namespace Web.Pages.ReleaseManagement
             return null;
         }
 
-        public class ReleaseDto
+        private async Task<bool> MapInput(Release newRelease)
         {
-
+            return await TryUpdateModelAsync(
+                           newRelease,
+                           "release",   // Prefix for form value.
+                           s => s.Name, s => s.Version, s => s.Contributors, s => s.Licence);
         }
     }
 }

@@ -1,0 +1,105 @@
+﻿@using Microsoft.AspNetCore.Identity
+@model List<Release>
+@inject SignInManager<IdentityUser> SignInManager
+
+@if (SignInManager.IsSignedIn(User))
+{
+    <div class="Release-list">
+        <h4>Releases</h4>
+        @foreach (var release in Model)
+        {
+            <div class="u-box">
+                <div class="Release-row">
+                    <ul class="Release-details">
+                        <li>
+                            @Html.LocalDate(release.CreatedUtc)
+                        </li>
+                        <li>
+                            @Html.DisplayFor(modelItem => release.Name)
+                        </li>
+                        <li>
+                            Version @Html.DisplayFor(modelItem => release.Version)
+                        </li>
+                    </ul>
+                    <ul class="Release-downloads">
+                        <li><a href="#">PDF</a></li>
+                        <li><a href="#">CAD</a></li>
+                        <li><a href="#">ZIP</a></li>
+                    </ul>
+                </div>
+            </div>
+        }
+    </div>
+}
+else
+{
+    <p>Login to view releases</p>
+}
+
+
+<style type="text/css">
+    .u-box {
+        margin-bottom: 10px;
+        padding: 20px 10px 20px 10px;
+        background: #f4fbf8;
+        border-radius: 0.625rem;
+    }
+
+    .Release-row {
+        display: flex;
+        justify-content: space-between;
+        vertical-align: central;
+    }
+
+        .Release-row ul {
+            margin-bottom: 0;
+        }
+
+        .Release-row li {
+            margin-bottom: 10px;
+        }
+
+    @@media screen and (min-width: 850px) {
+        .Release-row li {
+            margin-bottom: 0;
+        }
+    }
+
+    .Release-details {
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    }
+
+    .Release-downloads {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    }
+
+    @@media screen and (min-width: 850px) {
+        .Release-details {
+            flex: 3;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+            .Release-details > * {
+                width: 25%;
+            }
+    }
+
+    @@media screen and (min-width: 850px) {
+        .Release-downloads {
+            flex: 2;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+            .Release-downloads > * {
+                width: 25%;
+            }
+    }
+</style>
