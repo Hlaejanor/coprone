@@ -23,4 +23,7 @@
     <Folder Include="wwwroot\Papers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Remove="Pages\Stakeholders\Details.cshtml" />
+  </ItemGroup>
 </Project>
