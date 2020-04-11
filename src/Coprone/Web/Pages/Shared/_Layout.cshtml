@@ -30,18 +30,19 @@
                                 <li class="nav-item">
                                     <a class="nav-link" asp-page="/Index">Home</a>
                                 </li>
+                      
                                 <li class="nav-item">
                                     <a class="nav-link" asp-page="/TheScience">The science</a>
                                 </li>
+
                                 <li class="nav-item">
                                     <a class="nav-link" asp-page="/TheBed">The bed</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" asp-page="/Download">Download</a>
+                                    <a class="nav-link" asp-page="Download/Index">Download</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" asp-page="/Register">Privacy</a>
-                                </li>
+
+                                <partial name="_RegisterPartialNoListElement" />
                                 <partial name="_LoginPartialNoListElement" />
                             </ul>
                         </div>

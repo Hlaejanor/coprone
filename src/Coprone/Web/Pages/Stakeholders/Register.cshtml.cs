@@ -17,6 +17,7 @@ namespace Web.Pages.Stakeholders
         private readonly Web.Data.ApplicationDbContext _context;
         private readonly UserManager<IdentityUser> _userManager;
         private IdentityUser _userFromDb;
+        public Stakeholder Stakeholder { get; set; }
 
         public CreateModel(Web.Data.ApplicationDbContext context, UserManager<IdentityUser> userManager)
         {
@@ -28,13 +29,18 @@ namespace Web.Pages.Stakeholders
         {
 
             _userFromDb = await _userManager.GetUserAsync(User);
+            if (_userFromDb == null)
+            {
+                RedirectToPage("/Login");
+                throw new Exception("User not logged in");
+            }
 
             Stakeholder = await _context.Stakeholder
                 .Where(x => x.IdentityUser.Id == _userFromDb.Id)
                 .FirstOrDefaultAsync();
         }
 
-        public Stakeholder Stakeholder { get; set; }
+      
 
         public async Task<IActionResult> OnPostAsync()
         {

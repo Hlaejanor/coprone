@@ -21,9 +21,19 @@
   <ItemGroup>
     <Folder Include="wwwroot\fonts\" />
     <Folder Include="wwwroot\Papers\" />
+    <Folder Include="Pages\Download\" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Remove="Pages\Stakeholders\Details.cshtml" />
+    <Content Remove="Pages\ReleaseManagement %28copy%29\Delete.cshtml" />
+    <Content Remove="Pages\ReleaseManagement %28copy%29\Details.cshtml" />
+    <Content Remove="Pages\ReleaseManagement %28copy%29\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Pages\ReleaseManagement %28copy%29\Delete.cshtml.cs" />
+    <Compile Remove="Pages\ReleaseManagement %28copy%29\Details.cshtml.cs" />
+    <Compile Remove="Pages\ReleaseManagement %28copy%29\Edit.cshtml.cs" />
+    <Compile Remove="Pages\ReleaseManagement %28copy%29\Index.cshtml.cs" />
   </ItemGroup>
 </Project>
